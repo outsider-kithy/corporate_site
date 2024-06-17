@@ -106,6 +106,11 @@ header nav#gnav a{
     width: 16%;
     padding: 10px;
     text-align: center;
+    transition: 0.5s;
+    opacity: 1;
+}
+header nav#gnav a:hover{
+    opacity: 0.5;
 }
 
 header nav#gnav > :last-child{
@@ -113,6 +118,7 @@ header nav#gnav > :last-child{
     background-color: #8cc63f;
     color: #fff;
 }
+
 
 @media screen and (max-width: 940px) {
     header nav#gnav{
@@ -200,15 +206,12 @@ nav.open{
     width: 100%;
     min-height: 360px;
     margin-top: 100px;
-    background-image: url(../images/main_visual.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
 }
 
 @media screen and (max-width: 940px) {
     #main_visual{
-        min-height: 300px;
+        min-height: 240px;
         margin-top: 60px;
     }
 }
@@ -346,6 +349,13 @@ nav.open{
     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
     text-align: left;
 }
+#works ul li a{
+    transition: 0.5s all;
+    opacity: 1;
+}
+#works ul li a:hover{
+    opacity: 0.5;
+}
 
 #works ul li p{
     padding: 10px 10px 0;
@@ -368,7 +378,7 @@ nav.open{
     text-align: center;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 740px) {
     #works ul li{
         width: 100%;
         margin: 0 auto 30px;
@@ -413,6 +423,22 @@ nav.open{
         max-width: 100%;
         font-size: 14px;
     }
+    #about table tr{
+        width: 100%;
+        display: grid;
+    }
+    #about table tr th{
+        width: 100%;
+    }
+    #about table tr td{
+        width: 100%;
+    }
+    #about table tr:nth-child(even) th{
+        background-color: #bfe6f6;
+    }
+    #about table tr:nth-child(even) td{
+        background-color: #f0f0f0;
+    }
 }
 
 /* CONTACT */
@@ -427,10 +453,25 @@ nav.open{
     margin: 0 auto;
     border-collapse: separate;
 }
+
+#contact table td{
+    background-color: #fafafa;
+}
+
 @media screen and (max-width: 940px) {
     #contact table{
         max-width: 100%;
         font-size: 14px;
+    }
+    #contact table tr{
+        width: 100%;
+        display: grid;
+    }
+    #contact table tr th{
+        width: 100%;
+    }
+    #contact table tr td{
+        width: 100%;
     }
 }
 #contact table tr{
@@ -453,6 +494,23 @@ nav.open{
     padding: 20px;
     border: 1px solid #b3b3b3;
     border-radius: 2px;
+}
+
+#contact input[type=submit]{
+    display: inline-block;
+    width: 300px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #8cc63f;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+#contact input[type=submit]:hover{
+    transform: translateY(10px);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
 }
 
 /* footer */
@@ -512,6 +570,11 @@ footer nav a::after{
     height: 14px;
     top: 0;
     right: 20px;
+    transition: 0.5s;
+}
+
+footer nav a:hover::after{
+    transform: translateX(10px);
 }
 
 footer nav a:last-child{
@@ -527,6 +590,9 @@ footer nav a:last-child::after{
     height: 14px;
     top: 0;
     right: 20px;
+}
+footer nav a:last-child:hover::after{
+    transform: translateX(10px);
 }
 
 footer address{
@@ -556,5 +622,19 @@ footer #totop{
 footer #totop.show{
     opacity: 1;
 }
+footer #totop:hover{
+    opacity: 0.5;
+}
 
 /*ブロック要素のスタイルここまで*/
+
+/* スクロールアニメーション */
+.scrollIn{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s all;
+}
+.scrollOff{
+    opacity: 1;
+    transform: translateY(0);
+}
