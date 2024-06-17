@@ -212,7 +212,22 @@ header nav > :last-child{
     border: 1px solid #b3b3b3;
     border-radius: 2px;
 }
-
+#contact input[type=submit]{
+    display: inline-block;
+    width: 300px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #8cc63f;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+#contact input[type=submit]:hover{
+    transform: translateY(10px);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+}
 
 h2{
     display: inline;
@@ -279,6 +294,11 @@ footer nav a::after{
     height: 14px;
     top: 0;
     right: 20px;
+    transition: 0.5s;
+}
+
+footer nav a:hover::after{
+    transform: translateX(10px);
 }
 
 footer nav a:last-child{
@@ -294,6 +314,9 @@ footer nav a:last-child::after{
     height: 14px;
     top: 0;
     right: 20px;
+}
+footer nav a:last-child:hover::after{
+    transform: translateX(10px);
 }
 
 footer address{
