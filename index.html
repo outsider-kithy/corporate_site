@@ -3,6 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>株式会社なかよしホーム</title>
+
+        <!--Google Fontsを指定-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Righteous&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+        <!--CSSファイルを読み込み-->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
@@ -22,70 +31,85 @@
         </header>
 
         <main>
-            <div class="main_visual">
+            <div id="main_visual">
                 <img src="images/main_visual.jpg" alt="">
                 <p>街も、人も、みんな「なかよし」</p>
             </div>
 
             <div id="top">
-                <h2>TOP</h2>
-                <h3>住まいと人が調和する、サステナブルな街づくりを目指して。</h3>
-                <p>私たちなかよしホームは、お客様一人ひとりのライフスタイルやニーズに合わせた
-                    オーダーメイドの住まいを提案し、デザイン性と機能性を兼ね備えた家を提供することを使命としています。
-                    最新の建築技術と環境に配慮したエコ住宅を取り入れ、持続可能な未来を見据えた住まいづくりを実践しています。</p>
+                <div class="wrap">
+                    <h2>TOP</h2>
+                    <h3>住まいと人が調和する、サステナブルな街づくりを目指して。</h3>
+                    <p>私たちなかよしホームは、お客様一人ひとりのライフスタイルやニーズに合わせた<br>
+                        オーダーメイドの住まいを提案し、デザイン性と機能性を兼ね備えた家を提供することを使命としています。<br>
+                        最新の建築技術と環境に配慮したエコ住宅を取り入れ、持続可能な未来を見据えた住まいづくりを実践しています。</p>
+                </div>
             </div>
 
             <div id="message">
-                <h2>MESSAGE</h2>
-                <img src="images/presdent.png" alt="株式会社なかよしホーム 代表取締役社長 仲良 太郎">
-                <p>株式会社なかよしホーム 代表取締役社長 仲良 太郎</p>
-                <h3>お客様とともに、未来を築く。人にも地球にも思いやりを持った住まいを。</h3>
-                <p>私たちなかよしホームは、「街も、人も、みんな『なかよし』」をモットーに、創業以来地域に密着した住宅づくりを続けてまいりました。お客様一人ひとりのライフスタイルやニーズに合わせた住まいをご提供することを第一に考え、デザイン性と機能性を兼ね備えた家づくりを心掛けております。
-                    昨今の多様化するライフスタイルに対応するため、私たちは常に最新の建築技術とデザイントレンドを取り入れ、お客様にとって最適な住まいを提案しています。また、環境に配慮したエコ住宅の提供にも力を入れており、サステナブルな社会の実現に貢献してまいります。
-                    私たちの使命は、ただ家を建てることだけではなく、お客様と共に未来を築くことです。お客様の笑顔が見たい。そのために、スタッフ一同、一丸となって取り組んでいます。
-                    ご相談からアフターサービスまで、安心してお任せください。
-                </p>
+                <div class="wrap">
+                    <h2>MESSAGE</h2>
+
+                    <div class="col2">
+                        <div>
+                            <img src="images/presdent.png" alt="株式会社なかよしホーム 代表取締役社長 仲良 太郎">
+                            <p>株式会社なかよしホーム<br>代表取締役社長<br>仲良 太郎</p>
+                        </div>
+                        <div>
+                            <h3>お客様とともに、未来を築く。<br>人にも地球にも思いやりを持った住まいを。</h3>
+                            <p>私たちなかよしホームは、「街も、人も、みんな『なかよし』」をモットーに、創業以来地域に密着した住宅づくりを続けてまいりました。お客様一人ひとりのライフスタイルやニーズに合わせた住まいをご提供することを第一に考え、デザイン性と機能性を兼ね備えた家づくりを心掛けております。
+                                昨今の多様化するライフスタイルに対応するため、私たちは常に最新の建築技術とデザイントレンドを取り入れ、お客様にとって最適な住まいを提案しています。また、環境に配慮したエコ住宅の提供にも力を入れており、サステナブルな社会の実現に貢献してまいります。
+                                私たちの使命は、ただ家を建てることだけではなく、お客様と共に未来を築くことです。お客様の笑顔が見たい。そのために、スタッフ一同、一丸となって取り組んでいます。
+                                ご相談からアフターサービスまで、安心してお任せください。
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="mission">
-                <h2>MISSION</h2>
-                <h3>私たちのミッション</h3>
-                <ol>
-                    <li>「お客様第一の家づくり」を徹底します。</li>
-                    <li>「最新技術とデザインの融合」を目指します。</li>
-                    <li>「環境への配慮とサステナビリティ」を忘れません。</li>
-                    <li>「安心のアフターサービス」を実現します。</li>
-                </ol>
+                <div class="wrap">
+                    <h2>MISSION</h2>
+                    <h3>私たちのミッション</h3>
+                    <ol>
+                        <li>「お客様第一の家づくり」を徹底します。</li>
+                        <li>「最新技術とデザインの融合」を目指します。</li>
+                        <li>「環境への配慮とサステナビリティ」を忘れません。</li>
+                        <li>「安心のアフターサービス」を実現します。</li>
+                    </ol>
+                </div>
             </div>
 
             <div id="works">
                 <h2>WORKS</h2>
                 <h3>施工実績</h3>
                 <ul>
-                    <a href="#">
-                        <li>
+                    <li>
+                        <a href="#">
                             <img src="images/works01.jpg" alt="千葉県・N様邸">
-                            <p>千葉県・N様邸</p>
-                            <p>カーボンニュートラルを実現した住まい</p>
+                            <p class="cap">千葉県・N様邸</p>
+                            <p>カーボンニュートラルを<br>実現した住まい</p>
                             <button>詳しく見る</button>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#"></a>
                             <img src="images/works02.jpg" alt="茨城県・なかよし未来街区">
-                            <p>茨城県・なかよし未来街区</p>
-                            <p>次世代に緑をつなぐ街づくり</p>
+                            <p class="cap">茨城県・なかよし未来街区</p>
+                            <p>次世代に緑をつなぐ<br>街づくり</p>
                             <button>詳しく見る</button>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
                             <img src="images/works03.jpg" alt="東京都・D様邸">
-                            <p>東京都・D様邸</p>
-                            <p>都市の限られた土地を生かすデザイン</p>
+                            <p class="cap">東京都・D様邸</p>
+                            <p>都市の限られた土地を<br>生かすデザイン</p>
                             <button>詳しく見る</button>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -151,41 +175,33 @@
                         <tr>
                             <th>ご都合のよい時間帯</th>
                             <td>
-                                <label for="time">
-                                    <input type="radio" name="time" value="午前">
-                                    午前
-                                </label>
-                                <label for="time">
-                                    <input type="radio" name="time" value="午後">
-                                    午後
-                                </label>
-                                <label for="time">
-                                    <input type="radio" name="time" value="電話ではなくメールで連絡してほしい">
-                                    電話ではなくメールで連絡してほしい
-                                </label>
+                                <input type="radio" name="time" id="morning" value="午前">
+                                <label for="morning">午前</label>
+
+                                <input type="radio" name="time" id="afternoon" value="午後">
+                                <label for="afternoon">午後</label>
+
+                                <input type="radio" name="time" id="notcall" value="電話ではなくメールで連絡してほしい">
+                                <label for="notcall">電話ではなくメールで連絡してほしい</label>
                             </td>
                         </tr>
                         <tr>
                             <th>お問い合わせ内容（複数選択可）</th>
                             <td>
-                                <label for="content">
-                                    <input type="checkbox" name="content" value="リフォームを依頼したい">
-                                    リフォームを依頼したい
-                                </label>
-                                <label for="content">
-                                    <input type="checkbox" name="content" value="不動産を購入したい">
-                                    不動産を購入したい
-                                </label>
-                                <label for="content">
-                                    <input type="checkbox" name="content" value="不動産を売却したい">
-                                    不動産を売却したい
-                                </label>
+                                <input type="checkbox" name="contents1" id="contents1" value="リフォームを依頼したい">
+                                <label for="contents1">リフォームを依頼したい</label>
+
+                                <input type="checkbox" name="contents2" id="contents2" value="不動産を購入したい">
+                                <label for="contents2">不動産を購入したい</label>
+
+                                <input type="checkbox" name="contents3" id="contents3" value="不動産を売却したい">
+                                <label for="contents3">不動産を売却したい</label>
                             </td>
                         </tr>
                         <tr>
                             <th>その他</th>
                             <td>
-                                <textarea name="other" placeholder="400字以内でご記入ください。"></textarea>
+                                <textarea name="other" placeholder="400字以内でご記入ください。" maxlength="400"></textarea>
                             </td>
                         </tr>
                     </table>
@@ -194,27 +210,33 @@
         </main>
 
         <footer>
-            <a href="/">
-                <img src="images/logo.svg" alt="なかよしホーム">
-            </a>
-            <ul>
-                <li>株式会社なかよしホーム</li>
-                <li>〒169-0075
-                東京都新宿区高田馬場3丁目1-5
-                サンパティオ高田馬場309号室</li>
-                <li><a href="tel:0366919605">03-6691-9605（大代表）</a></li>
-            </ul>
+            <div class="wrap">
+                <div class="col2">
+                    <ul>
+                        <li>
+                            <a href="/">
+                                <img src="images/logo.svg" alt="なかよしホーム">
+                            </a>
+                        </li>
+                        <li>株式会社なかよしホーム</li>
+                        <li>〒169-0075
+                        東京都新宿区高田馬場3丁目1-5
+                        サンパティオ高田馬場309号室</li>
+                        <li><a href="tel:0366919605">03-6691-9605（大代表）</a></li>
+                    </ul>
 
-            <nav>
-                <a href="#top">TOP</a>
-                <a href="#message">MESSAGE</a>
-                <a href="#mission">MISSION</a>
-                <a href="#works">WORKS</a>
-                <a href="#about">ABOUT</a>
-                <a href="#contact">CONTACT</a>
-            </nav>
+                    <nav>
+                        <a href="#top">TOP</a>
+                        <a href="#message">MESSAGE</a>
+                        <a href="#mission">MISSION</a>
+                        <a href="#works">WORKS</a>
+                        <a href="#about">ABOUT</a>
+                        <a href="#contact">CONTACT</a>
+                    </nav>
+                </div>
 
-            <address>Copyright © Nakayoshi Home Inc. All Rights Reserved.</address>
+                <address>Copyright © Nakayoshi Home Inc. All Rights Reserved.</address>
+            </div>
         </footer>
     </body>
 </html>
