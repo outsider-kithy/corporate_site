@@ -1,5 +1,69 @@
 @charset "UTF-8";
 
+/*インライン要素のスタイル*/
+h2{
+    display: inline;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 3.0em;
+    border-bottom: 2px solid #29abe2;
+}
+
+@media screen and (max-width: 940px) {
+    h2{
+        font-size: 24px;
+    }
+}
+
+h3{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 2.0em;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 940px) {
+    h3{
+        font-size: 20px;
+    }
+}
+
+p{
+    font-size: 16px;
+    line-height: 2.0em;
+}
+
+@media screen and (max-width: 940px) {
+    p{
+        font-size: 14px;
+    }
+}
+/*インライン要素のスタイルここまで*/
+
+/* PC・SP時の切り替え*/
+.pc{
+    display: block;
+}
+.sp{
+    display: none;
+}
+
+@media screen and (max-width: 940px) {
+    .pc{
+        display: none;
+    }
+    .sp{
+        display: block;
+    }
+}
+/* PC・SP時の切り替えここまで*/
+
+
+/*ブロック要素のスタイル*/
+
+/* header */
 header{
     width: 100%;
     margin: 0;
@@ -129,6 +193,9 @@ nav.open{
    display: block;
 }
 
+/* main */
+
+/* メインビジュアル */
 #main_visual{
     width: 100%;
     min-height: 360px;
@@ -163,6 +230,7 @@ nav.open{
     }
 }
 
+/* TOP */
 #top{
     width: 100%;
     padding: 60px 0;
@@ -181,6 +249,7 @@ nav.open{
     padding: 10px;
 }
 
+/* MESSAGE */
 #message{
     padding: 60px 0;
     background-image: url(../images/back01.jpg);
@@ -225,6 +294,7 @@ nav.open{
     }
 }
 
+/* MISSION */
 #mission{
     padding: 60px 0;
     background-image: url(../images/back02.jpg);
@@ -255,6 +325,7 @@ nav.open{
     counter-increment: count 1;
 }
 
+/* WORKS */
 #works{
     padding: 60px 0;
     text-align: center;
@@ -304,6 +375,7 @@ nav.open{
     }
 }
 
+/* ABOUT */
 #about{
     padding: 60px 0;
     background-image: url(../images/back01.jpg);
@@ -343,6 +415,7 @@ nav.open{
     }
 }
 
+/* CONTACT */
 #contact{
     background-color: #f2f2f2;
     padding: 60px 0px;
@@ -382,63 +455,7 @@ nav.open{
     border-radius: 2px;
 }
 
-
-h2{
-    display: inline;
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 36px;
-    line-height: 3.0em;
-    border-bottom: 2px solid #29abe2;
-}
-
-@media screen and (max-width: 940px) {
-    h2{
-        font-size: 24px;
-    }
-}
-
-h3{
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 2.0em;
-    margin-bottom: 30px;
-}
-
-@media screen and (max-width: 940px) {
-    h3{
-        font-size: 20px;
-    }
-}
-
-p{
-    font-size: 16px;
-    line-height: 2.0em;
-}
-
-@media screen and (max-width: 940px) {
-    p{
-        font-size: 14px;
-    }
-}
-
-.pc{
-    display: block;
-}
-.sp{
-    display: none;
-}
-
-@media screen and (max-width: 940px) {
-    .pc{
-        display: none;
-    }
-    .sp{
-        display: block;
-    }
-}
-
+/* footer */
 footer{
     width: 100%;
     padding: 60px 0;
@@ -518,3 +535,26 @@ footer address{
     font-style: normal;
     font-size: 10px;
 }
+
+footer #totop{
+    opacity: 0;
+    transition: 0.5s all;
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 15px 10px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #29abe2;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+footer #totop.show{
+    opacity: 1;
+}
+
+/*ブロック要素のスタイルここまで*/
