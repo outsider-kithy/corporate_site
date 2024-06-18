@@ -36,6 +36,15 @@ window.addEventListener("DOMContentLoaded", function(){
             }
         }
     });
+
+    //モーダルを制御
+    let open_btns = document.querySelectorAll(".dialog_open");
+    let close_btns = document.querySelectorAll(".dialog_close");
+    let dialogs = document.querySelectorAll(".dialog");
+
+    for(let i = 0; i < open_btns.length; i++){
+       createModal(dialogs[i], open_btns[i], close_btns[i]);
+    }
 });
 
  //トップへ戻るボタン
@@ -51,3 +60,30 @@ window.addEventListener("DOMContentLoaded", function(){
         behavior: "smooth",
      });
  });
+
+
+ window.addEventListener("DOMContentLoaded", function(){
+
+    let open_btns = document.querySelectorAll(".dialog_open");
+    let close_btns = document.querySelectorAll(".dialog_close");
+    let dialogs = document.querySelectorAll(".dialog");
+
+    for(let i = 0; i < open_btns.length; i++){
+       createModal(dialogs[i], open_btns[i], close_btns[i]);
+    }
+});
+
+
+//モーダルを開く関数
+function createModal(dialog, dialog_open, dialog_close){
+    dialog_open.addEventListener("click", function(){
+        dialog.showModal();
+    });
+    dialog_close.addEventListener("click", function(){
+        dialog.close()
+    });
+    //モーダルの外側がクリックされたら
+    document.addEventListener('click', ({
+        target
+    }) => target === dialog && dialog.close());
+}

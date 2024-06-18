@@ -60,7 +60,6 @@ p{
 }
 /* PC・SP時の切り替えここまで*/
 
-
 /*ブロック要素のスタイル*/
 
 /* header */
@@ -348,12 +347,11 @@ nav.open{
     background-color: #fff;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
     text-align: left;
-}
-#works ul li a{
     transition: 0.5s all;
     opacity: 1;
 }
-#works ul li a:hover{
+
+#works ul li:hover{
     opacity: 0.5;
 }
 
@@ -382,6 +380,59 @@ nav.open{
     #works ul li{
         width: 100%;
         margin: 0 auto 30px;
+    }
+}
+
+/* モーダル本体 */
+dialog{
+    position: fixed;
+    max-width: 740px;
+    margin: auto auto;
+    padding: 40px;
+    border: none;
+}
+
+dialog::backdrop{
+    background: rgba(0,0,0, .5);
+    animation: modal-open 0.3s ease;
+}
+
+dialog[open]{
+    animation: modal-slide 0.3s ease;
+    overflow-y: scroll;
+}
+
+dialog img{
+    margin-top: 30px;
+}
+
+/* モーダルを閉じるボタン */
+.dialog_close{
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #29abe2;
+    color: #fff;
+    font-size: 40px;
+    line-height: 0.5em;
+}
+
+@keyframes modal-open{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes modal-slide{
+    0%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
 
